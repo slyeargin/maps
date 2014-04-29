@@ -2,15 +2,25 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Maps
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    h1 Maps
+
+    input#place(type='text', placeholder='Enter a place.', autofocus=true)
+    button#add Add Place
+    select#vacations
+      option Select a Vacation
+    button#show Show on Map
+    button#nsa Find Me
+
+    #map
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_toKe0pLMxfJDlaRZqA9PIn7nhgRjKA&sensor=true')
     script(src='./js/es5/main.js')
     script(src='./js/es6/main.js')
